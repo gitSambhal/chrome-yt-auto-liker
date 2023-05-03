@@ -1,0 +1,25 @@
+{
+  "name": "My YouTube Liker",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Automatically likes and screenshots YouTube videos",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabCapture",
+    "activeTab",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/watch*",
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
