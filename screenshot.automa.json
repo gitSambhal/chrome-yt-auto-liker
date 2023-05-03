@@ -1,0 +1,334 @@
+{
+  "extVersion": "1.28.1",
+  "name": "Take Screenshot",
+  "icon": "https://img.icons8.com/ios-glyphs/30/000000/screenshot.png",
+  "table": [],
+  "version": "1.28.1",
+  "drawflow": {
+    "nodes": [
+      {
+        "computedPosition": {
+          "x": 96,
+          "y": 58.5,
+          "z": 0
+        },
+        "data": {
+          "disableBlock": false,
+          "description": "",
+          "type": "manual",
+          "interval": 60,
+          "delay": 5,
+          "date": "",
+          "time": "00:00",
+          "url": "",
+          "shortcut": "",
+          "activeInInput": false,
+          "isUrlRegex": false,
+          "days": [],
+          "contextMenuName": "",
+          "contextTypes": [],
+          "parameters": [],
+          "preferParamsInTab": false,
+          "observeElement": {
+            "selector": "",
+            "baseSelector": "",
+            "matchPattern": "",
+            "targetOptions": {
+              "subtree": false,
+              "childList": true,
+              "attributes": false,
+              "attributeFilter": [],
+              "characterData": false
+            },
+            "baseElOptions": {
+              "subtree": false,
+              "childList": true,
+              "attributes": false,
+              "attributeFilter": [],
+              "characterData": false
+            }
+          },
+          "settings": {
+            "blockTimeout": 0,
+            "debugMode": false
+          },
+          "triggers": [
+            {
+              "data": {
+                "activeInInput": false,
+                "shortcut": "b"
+              },
+              "id": "vx4Mz",
+              "type": "keyboard-shortcut"
+            },
+            {
+              "id": "_sdBh",
+              "type": "visit-web",
+              "data": {
+                "url": "*youtube\\.com\\/watch\\?v*",
+                "isUrlRegex": true,
+                "supportSPA": false
+              }
+            },
+            {
+              "id": "KbdW4",
+              "type": "visit-web",
+              "data": {
+                "url": ".*youtube\\.com\\/watch.*",
+                "isUrlRegex": true,
+                "supportSPA": false
+              }
+            }
+          ],
+          "$breakpoint": true
+        },
+        "dimensions": {
+          "width": 192,
+          "height": 72
+        },
+        "dragging": false,
+        "events": {},
+        "handleBounds": {
+          "source": [
+            {
+              "id": "46d653e2-8231-404a-8105-322fde547dd4-output-1",
+              "position": "right",
+              "x": 196,
+              "y": 28,
+              "width": 16,
+              "height": 16
+            }
+          ]
+        },
+        "id": "46d653e2-8231-404a-8105-322fde547dd4",
+        "initialized": true,
+        "label": "trigger",
+        "position": {
+          "x": 96,
+          "y": 58.5
+        },
+        "resizing": false,
+        "selected": false,
+        "type": "BlockBasic"
+      },
+      {
+        "computedPosition": {
+          "x": 388,
+          "y": 58.5,
+          "z": 0
+        },
+        "data": {},
+        "dimensions": {
+          "width": 192,
+          "height": 72
+        },
+        "dragging": false,
+        "events": {},
+        "handleBounds": {
+          "source": [
+            {
+              "id": "2788700a-cf90-477c-80ec-fa55d8648520-output-1",
+              "position": "right",
+              "x": 196,
+              "y": 28,
+              "width": 16,
+              "height": 16
+            }
+          ],
+          "target": [
+            {
+              "id": "2788700a-cf90-477c-80ec-fa55d8648520-input-1",
+              "position": "left",
+              "x": -20,
+              "y": 28,
+              "width": 16,
+              "height": 16
+            }
+          ]
+        },
+        "id": "2788700a-cf90-477c-80ec-fa55d8648520",
+        "initialized": true,
+        "label": "active-tab",
+        "position": {
+          "x": 388,
+          "y": 58.5
+        },
+        "resizing": false,
+        "selected": false,
+        "type": "BlockBasic"
+      },
+      {
+        "computedPosition": {
+          "x": 972,
+          "y": 58.5,
+          "z": 0
+        },
+        "data": {
+          "captureActiveTab": true,
+          "dataColumn": "",
+          "ext": "png",
+          "fileName": "",
+          "fullPage": false,
+          "quality": 100,
+          "saveToColumn": false,
+          "saveToComputer": true
+        },
+        "dimensions": {
+          "width": 192,
+          "height": 72
+        },
+        "dragging": false,
+        "events": {},
+        "handleBounds": {
+          "source": [
+            {
+              "id": "df1e285f-451d-450c-9e94-dba6609c1633-output-1",
+              "position": "right",
+              "x": 196,
+              "y": 28,
+              "width": 16,
+              "height": 16
+            }
+          ],
+          "target": [
+            {
+              "id": "df1e285f-451d-450c-9e94-dba6609c1633-input-1",
+              "position": "left",
+              "x": -20,
+              "y": 28,
+              "width": 16,
+              "height": 16
+            }
+          ]
+        },
+        "id": "df1e285f-451d-450c-9e94-dba6609c1633",
+        "initialized": true,
+        "label": "take-screenshot",
+        "position": {
+          "x": 972,
+          "y": 58.5
+        },
+        "resizing": false,
+        "selected": false,
+        "type": "BlockBasic"
+      },
+      {
+        "type": "BlockDelay",
+        "dimensions": {
+          "width": 192,
+          "height": 117
+        },
+        "handleBounds": {
+          "source": [
+            {
+              "id": "gtxr16z-output-1",
+              "position": "right",
+              "x": 196.00003496429684,
+              "y": 50.58593904618058,
+              "width": 16,
+              "height": 16
+            }
+          ],
+          "target": [
+            {
+              "id": "gtxr16z-input-1",
+              "position": "left",
+              "x": -19.9999746426385,
+              "y": 50.58593904618058,
+              "width": 16,
+              "height": 16
+            }
+          ]
+        },
+        "computedPosition": {
+          "x": 680,
+          "y": 58.5,
+          "z": 1000
+        },
+        "selected": true,
+        "dragging": false,
+        "resizing": false,
+        "initialized": true,
+        "data": {
+          "disableBlock": false,
+          "time": "2500"
+        },
+        "events": {},
+        "position": {
+          "x": 680,
+          "y": 58.5
+        },
+        "label": "delay",
+        "id": "gtxr16z"
+      }
+    ],
+    "edges": [
+      {
+        "id": "vueflow__edge-46d653e2-8231-404a-8105-322fde547dd4-output-1-2788700a-cf90-477c-80ec-fa55d8648520-input-1",
+        "data": {},
+        "events": {},
+        "markerEnd": "arrowclosed",
+        "selectable": true,
+        "source": "46d653e2-8231-404a-8105-322fde547dd4",
+        "sourceHandle": "46d653e2-8231-404a-8105-322fde547dd4-output-1",
+        "target": "2788700a-cf90-477c-80ec-fa55d8648520",
+        "targetHandle": "2788700a-cf90-477c-80ec-fa55d8648520-input-1",
+        "type": "custom",
+        "updatable": true
+      },
+      {
+        "id": "vueflow__edge-2788700a-cf90-477c-80ec-fa55d86485202788700a-cf90-477c-80ec-fa55d8648520-output-1-gtxr16zgtxr16z-input-1",
+        "source": "2788700a-cf90-477c-80ec-fa55d8648520",
+        "sourceHandle": "2788700a-cf90-477c-80ec-fa55d8648520-output-1",
+        "target": "gtxr16z",
+        "targetHandle": "gtxr16z-input-1",
+        "class": "connected-edges",
+        "updatable": true,
+        "type": "custom",
+        "selectable": true,
+        "markerEnd": "arrowclosed",
+        "data": {},
+        "events": {}
+      },
+      {
+        "id": "vueflow__edge-gtxr16zgtxr16z-output-1-df1e285f-451d-450c-9e94-dba6609c1633df1e285f-451d-450c-9e94-dba6609c1633-input-1",
+        "target": "df1e285f-451d-450c-9e94-dba6609c1633",
+        "source": "gtxr16z",
+        "targetHandle": "df1e285f-451d-450c-9e94-dba6609c1633-input-1",
+        "sourceHandle": "gtxr16z-output-1",
+        "type": "custom",
+        "updatable": true,
+        "selectable": true,
+        "markerEnd": "arrowclosed",
+        "data": {},
+        "events": {},
+        "class": "connected-edges"
+      }
+    ],
+    "position": [
+      -40.35903983656783,
+      302.6547497446374
+    ],
+    "zoom": 0.9473953013278854
+  },
+  "settings": {
+    "publicId": "",
+    "restartTimes": 3,
+    "notification": true,
+    "tabLoadTimeout": 30000,
+    "inputAutocomplete": true,
+    "insertDefaultColumn": false,
+    "defaultColumnName": "column",
+    "blockDelay": 0,
+    "debugMode": true,
+    "execContext": "popup",
+    "executedBlockOnWeb": true,
+    "onError": "stop-workflow",
+    "reuseLastState": false,
+    "saveLog": true,
+    "timeout": 120000
+  },
+  "globalData": "[{ \"key\": \"value\" }]",
+  "description": "Takes a screenshot of an active tab",
+  "includedWorkflows": {}
+}
