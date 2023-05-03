@@ -1,6 +1,7 @@
 console.log('My chrome extension');
 setTimeout(() => {
   console.log('My chrome extension: Inside timeout');
+  const button = document.querySelector('#segmented-like-button > ytd-toggle-button-renderer:nth-child(1) button')
   if (button) {
     // Like the video
     button.click()
@@ -11,4 +12,4 @@ setTimeout(() => {
   } else {
     console.log('Button not found');
   }
-}, 3000);
+}, 2000);
